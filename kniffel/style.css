@@ -1,0 +1,29 @@
+background {
+  color: #cacaca;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: -11px;
+  margin-left: -7.8px;
+  margin-right: -7.8px;
+  background: #dc052d;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  margin-top: 3px;
+  color: white;
+  font-family: arial;
+}
+
+.navigation a:hover {
+  background: #0066b2;
+  box-shadow: 0 1.5rem 2.8rem rgba(255, 255, 255, 0.486),
+    0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translate(0, 0rem) scale(1.01);
+}
