@@ -1,0 +1,114 @@
+background {
+  color: #cacaca;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: -11px;
+  margin-left: -7.8px;
+  margin-right: -7.8px;
+  background: #dc052d;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  margin-top: 3px;
+  color: white;
+  font-family: arial;
+}
+
+.navigation a:hover {
+  background: #0066b2;
+  box-shadow: 0 1.5rem 2.8rem rgba(255, 255, 255, 0.486),
+    0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translate(0, 0rem) scale(1.01);
+}
+
+.projects {
+  width: 90vw;
+  height: 90vh;
+  margin: 5vh auto 5vh auto;
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 25%, 25%, 25%, 25%;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "box1 box1 box2 box2"
+    "box1 box1 box2 box2"
+    "box3 box3 box3 box3"
+    "box3 box3 box3 box3";
+}
+
+.projects .grid-box {
+  background: rgb(185, 185, 185);
+  transition: 250ms;
+  font-size: 5rem;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0, 12), 0 1px 2px,
+    rgba(0, 0, 0, 0, 24);
+  animation: fadein 1s ease-out normal backwards;
+}
+
+.projects .grid-box:hover {
+  box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.15),
+    0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translate(0, -0.5rem) scale(1.01);
+}
+
+.projects .element1 {
+  grid-area: box1;
+  animation-delay: 0;
+}
+.projects .element2 {
+  grid-area: box2;
+  animation-delay: 100ms;
+}
+.projects .element3 {
+  grid-area: box3;
+  animation-delay: 200ms;
+}
+.projects .element4 {
+  grid-area: box4;
+  animation-delay: 200ms;
+}
+.projects .element5 {
+  grid-area: box5;
+  animation-delay: 100ms;
+}
+.projects .element6 {
+  grid-area: box6;
+  animation-delay: 200ms;
+}
+.projects .element7 {
+  grid-area: box7;
+  animation-delay: 300ms;
+}
+.projects .element8 {
+  grid-area: box8;
+  animation-delay: 200ms;
+}
+.projects .element9 {
+  grid-area: box9;
+  animation-delay: 400ms;
+}
+.projects .element10 {
+  grid-area: box10;
+  animation-delay: 500ms;
+}
+
+@keyframes fadein {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
