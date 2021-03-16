@@ -869,6 +869,7 @@ a:hover {
 
 .card-blog .card-body {
   position: relative;
+  
 }
 
 .card-blog .card-category-box {
@@ -880,6 +881,7 @@ a:hover {
   line-height: 25px;
   overflow: hidden;
 }
+
 
 .card-blog .card-category {
   display: inline-block;
@@ -918,6 +920,12 @@ a:hover {
   float: right;
 }
 
+.card-blog:hover {
+  box-shadow: 0 1.5rem 2.8rem rgba(0, 0, 0, 0.15),
+    0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translate(0, -0.5rem) scale(1.01);
+}
+
 /*======================================
 //--//-->   BLOG-SINGLE
 ======================================*/
@@ -925,10 +933,12 @@ a:hover {
 .post-box,
 .form-comments,
 .box-comments,
-.widget-sidebar {
+.widget-sidebar:hover {
   padding: 2rem;
   background-color: #fff;
   margin-bottom: 3rem;
+  
+   
 }
 
 .blog-wrapper .article-title {
@@ -962,6 +972,7 @@ a:hover {
   padding: 18px;
   font-style: italic;
 }
+
 
 /*------/ Comments /------*/
 
@@ -1192,7 +1203,9 @@ footer .credits a {
 
   .card-blog {
     margin-bottom: 3rem;
-  }
+    
+      }
+  
 
   .contact-mf .box-pl2 {
     margin-top: 3rem;
